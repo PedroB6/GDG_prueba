@@ -1,5 +1,5 @@
 // Countdown Timer
-const eventDate = new Date('June 12, 2025 09:00:00').getTime();
+const eventDate = new Date('July 12, 2025 09:00:00').getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
