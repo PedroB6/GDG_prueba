@@ -53,8 +53,8 @@ h1, h2, h3, p {
 
 .logo img {
     height: auto;
-    
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -218,7 +218,7 @@ nav a:hover {
 }
 
 .logo {
-    width: 150px;
+    width: 300px;
     margin-bottom: 10px;
 }
 
