@@ -20,7 +20,6 @@
                 <li><a href="#about">Sobre el evento</a></li>
                 <li><a href="#talks">Charlas y ponentes</a></li>
                 <li><a href="#register">Inscripción</a></li>
-                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -28,7 +27,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <img src="assets/logo_piuraAI.png" width="100" height="100" alt="Logo principal">
+            <img src="assets/devfest1.png" alt="Logo principal" class="horizontal-images">
             <h1>Explora el futuro de la Inteligencia Artificial en Piura</h1>
             <p>Charlas, talleres y demos con expertos en IA. Únete a la comunidad y aprende de los mejores.</p>
             <a href="https://lu.ma/9ig7sw1s" target="_blank" class="btn">Inscríbete ahora</a>
@@ -80,51 +79,33 @@
 
     <!-- Registration Section -->
     <section id="register" class="register">
+        <img src="assets/devfest2.png" alt="Logo principal" class="horizontal-images">
         <h2>Inscripción</h2>
         <p>No te pierdas esta oportunidad de aprender de los mejores en IA. ¡Reserva tu lugar ahora!</p>
         <a href="https://lu.ma/9ig7sw1s" target="_blank" class="btn">Inscribirme</a>
+
         <div class="countdown">
+
             <h3>Faltan:</h3>
             <div id="timer">
-                <span id="days"></span> días
-                <span id="hours"></span> horas
-                <span id="minutes"></span> minutos
-                <span id="seconds"></span> segundos
+                <div class="time-box"><span id="days"></span> <label>Días</label></div>
+                <div class="time-box"><span id="hours"></span> <label>Horas</label></div>
+                <div class="time-box"><span id="minutes"></span> <label>Minutos</label></div>
+                <div class="time-box"><span id="seconds"></span> <label>Segundos</label></div>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contacto</h2>
-        <div class="contact-content">
-            <div class="form">
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo Electrónico" required>
-                <textarea placeholder="Mensaje" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </div>
-            <div class="info">
-                <p><strong>Ubicación:</strong> Piura, Perú</p>
-                <p><strong>Fecha:</strong> 15 de Agosto, 2025</p>
-                <p><strong>Redes Sociales:</strong></p>
-                <a href="https://twitter.com/buildwithaipiura" target="_blank">Twitter</a>
-                <a href="https://instagram.com/buildwithaipiura" target="_blank">Instagram</a>
-            </div>
-        </div>
-    </section>
-
 
     <footer>
-        <div style="display:flex;place-items: center;" class="speakers">
-            <div class="speaker">
+        <div class="horizontal-images">
+            <div>
                 <img src="assets/logo_gdgPiura.png" alt="Logo principal">
             </div>
-            <div class="speaker">
+            <div>
                 <img src="assets/logo_IEEE.png" alt="Logo principal">
             </div>
-            <div style="width: 200px;height: 150px;object-fit: cover;" class="speaker">
-                <img src="assets/logo_piuraAI.png" alt="Logo principal">
+            <div> <!--style="width: 200px;height: 150px;object-fit: cover;" -->
+                <img src="assets/logo_piuraAI.png" alt="Logo principal" style="border: none;">
             </div>
         </div>
         <p>&copy; 2025 Google Developer Group Piura. Todos los derechos reservados.</p>

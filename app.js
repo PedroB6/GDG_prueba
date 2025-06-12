@@ -10,18 +10,33 @@ function updateCountdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById('days').textContent = days;
-    document.getElementById('hours').textContent = hours;
-    document.getElementById('minutes').textContent = minutes;
-    document.getElementById('seconds').textContent = seconds;
+    // Aplicar animaciones al cambiar valores
+    updateTimerElement('days', days);
+    updateTimerElement('hours', hours);
+    updateTimerElement('minutes', minutes);
+    updateTimerElement('seconds', seconds);
 
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.getElementById('timer').textContent = '¡El evento ha comenzado!';
+        document.getElementById('timer').innerHTML = '<span class="finished">¡El evento ha comenzado!</span>';
     }
 }
 
+// Función para actualizar valores con animación
+function updateTimerElement(id, value) {
+    const element = document.getElementById(id);
+    if (element.textContent != value) {
+        element.classList.add("update");
+        setTimeout(() => {
+            element.textContent = value;
+            element.classList.remove("update");
+        }, 200);
+    }
+}
+
+// Activar actualización cada segundo
 const countdownInterval = setInterval(updateCountdown, 1000);
+
 
 // Smooth Scroll for Navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
